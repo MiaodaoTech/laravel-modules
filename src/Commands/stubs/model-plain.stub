@@ -1,0 +1,14 @@
+<?php
+
+namespace $CLASS_NAMESPACE$;
+
+use $MODULE_NAMESPACE$\Model\BaseModel;
+
+class $CLASS$ extends \Illuminate\Database\Eloquent\Model
+{
+    //protected $table = "";
+
+    protected $fillable = $FILLABLE$;
+
+    protected $casts = [];
+}

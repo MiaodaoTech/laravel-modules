@@ -1,0 +1,16 @@
+<?php
+
+namespace $CLASS_NAMESPACE$;
+
+use $MODULE_NAMESPACE$\Model\BaseModel;
+
+class $CLASS$ extends BaseModel
+{
+    //protected $table = "";
+
+    protected $fillable = $FILLABLE$;
+
+    protected $casts = $CASTS$;
+
+    public $joins = [];
+}

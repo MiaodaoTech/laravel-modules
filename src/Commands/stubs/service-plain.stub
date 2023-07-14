@@ -1,0 +1,10 @@
+<?php
+
+namespace $CLASS_NAMESPACE$;
+
+use $MODEL_NAMESPACE$\$MODEL_NAME$;
+
+class $CLASS$
+{
+
+}
