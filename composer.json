@@ -40,7 +40,7 @@
   "extra": {
     "laravel": {
       "aliases": {
-        "Module": "Mdtech\\Modules\\Facades\\Module"
+        "Module": "MdTech\\Modules\\Facades\\Module"
       }
     },
     "branch-alias": {
