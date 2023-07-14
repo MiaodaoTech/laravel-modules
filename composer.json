@@ -31,7 +31,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Mdtech\\Modules\\": "src/"
+      "MdTech\\Modules\\": "src/"
     },
     "files": [
       "src/helpers.php"
@@ -40,7 +40,6 @@
   "extra": {
     "laravel": {
       "aliases": {
-        "Module": "MdTech\\Modules\\Facades\\Module"
       }
     },
     "branch-alias": {
