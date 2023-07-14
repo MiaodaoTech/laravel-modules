@@ -31,7 +31,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Mdtech\\Modules\\": "src"
+      "Mdtech\\Modules\\": "src/"
     },
     "files": [
       "src/helpers.php"
