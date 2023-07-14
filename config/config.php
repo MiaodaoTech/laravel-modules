@@ -27,31 +27,12 @@ return [
 
     'stubs' => [
         'enabled' => false,
-        'path' => base_path('vendor/nwidart/laravel-modules/src/Commands/stubs'),
+        'path' => base_path('vendor/md-tech/laravel-modules/src/Commands/stubs'),
         'files' => [
 //            'routes/web' => 'Routes/web.php',
-//            'routes/api' => 'Routes/api.php',
-//            'views/index' => 'Resources/views/index.blade.php',
-//            'views/master' => 'Resources/views/layouts/master.blade.php',
-//            'scaffold/config' => 'Config/config.php',
         ],
         'replacements' => [
 //            'routes/web' => ['LOWER_NAME', 'STUDLY_NAME'],
-//            'routes/api' => ['LOWER_NAME'],
-//            'webpack' => ['LOWER_NAME'],
-//            'json' => ['LOWER_NAME', 'STUDLY_NAME', 'MODULE_NAMESPACE', 'PROVIDER_NAMESPACE'],
-//            'views/index' => ['LOWER_NAME'],
-//            'views/master' => ['LOWER_NAME', 'STUDLY_NAME'],
-//            'scaffold/config' => ['STUDLY_NAME'],
-//            'composer' => [
-//                'LOWER_NAME',
-//                'STUDLY_NAME',
-//                'VENDOR',
-//                'AUTHOR_NAME',
-//                'AUTHOR_EMAIL',
-//                'MODULE_NAMESPACE',
-//                'PROVIDER_NAMESPACE',
-//            ],
         ],
         'gitkeep' => true,
     ],
@@ -162,10 +143,10 @@ return [
     */
 
     'composer' => [
-        'vendor' => 'nwidart',
+        'vendor' => 'md-tech',
         'author' => [
-            'name' => 'Nicolas Widart',
-            'email' => 'n.widart@gmail.com',
+            'name' => 'h2odumpling',
+            'email' => 'h2odumpling@vip.qq.com',
         ],
         'composer-output' => false,
     ],

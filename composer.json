@@ -37,12 +37,6 @@
       "src/helpers.php"
     ]
   },
-  "autoload-dev": {
-    "psr-4": {
-      "Mdtech\\Modules\\Tests\\": "tests",
-      "Modules\\Recipe\\": "tests/stubs/valid/Recipe"
-    }
-  },
   "extra": {
     "laravel": {
       "aliases": {
