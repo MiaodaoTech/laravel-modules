@@ -54,7 +54,7 @@ class ControllerMakeCommand extends GeneratorCommand
 
         $path = $this->laravel['modules']->getFilePath($controllerPath->getPath(), $this->getMidPart());
 
-        return $path . '/' . $this->getControllerName() . '.php';
+        return $path . '/' . $this->getModuleName() . '/' . $this->getControllerName() . '.php';
     }
 
     /**
@@ -96,6 +96,7 @@ class ControllerMakeCommand extends GeneratorCommand
         return [
             ['controller', InputArgument::REQUIRED, 'The name of the controller class.'],
             ['part', InputArgument::REQUIRED, 'The mid-part of the controller class.'],
+            ['child', InputArgument::OPTIONAL, 'The child of the controller class.'],
             ['module', InputArgument::OPTIONAL, 'The name of module will be used.'],
         ];
     }
@@ -133,7 +134,7 @@ class ControllerMakeCommand extends GeneratorCommand
      * @return string
      */
     protected function getControllerNamespace(){
-        return $this->laravel['modules']->config('namespace') . '\\' .GenerateConfigReader::read('controller')->getNamespace() . '\\' . $this->getMidPart();
+        return $this->laravel['modules']->config('namespace') . '\\' .GenerateConfigReader::read('controller')->getNamespace() . '\\' . $this->getMidPart(). '\\' . $this->getModuleName();
     }
 
     /**

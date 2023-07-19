@@ -420,7 +420,8 @@ class ModuleGenerator extends Generator
                 $this->console->call('module:make-controller', [
                         'controller' => $this->getName() . $this->getChild(),
                         'module' => $this->getName(),
-                        'part' => $part
+                        'part' => $part,
+                        'child' => $this->getChild()
                     ]+$options);
             }
 

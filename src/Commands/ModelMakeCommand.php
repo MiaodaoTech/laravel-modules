@@ -72,7 +72,8 @@ class ModelMakeCommand extends GeneratorCommand
             'NAME'              => $this->getModelName(),
             'MODULE_NAMESPACE'  => $this->laravel['modules']->config('namespace'),
             'FILLABLE'          => $this->getFillable(),
-            'CASTS'              => $this->getCasts(),
+            'CASTS'             => $this->getCasts(),
+            'TABLE_NAME'        => $this->getTableName(),
         ]))->render();
     }
 
@@ -149,7 +150,6 @@ class ModelMakeCommand extends GeneratorCommand
      * @date 2023/7/13
      */
     protected function getTableName(){
-        $name = env('DB_PREFIX');
         $count = 0;
         $name = preg_replace_callback('/[A-Z]/', function ($match) use (&$count){
             $count++;
