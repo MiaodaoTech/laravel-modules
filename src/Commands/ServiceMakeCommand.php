@@ -152,7 +152,7 @@ class ServiceMakeCommand extends GeneratorCommand
         if($this->argument('part') == 'common'){
             return "\App\Http\Services\BaseService";
         }else{
-            return '\\' . $this->getServiceNamespace() . '\\' . $this->getModuleName() . PartConfigReader::read('common')->getName() . 'Service';
+            return '\\' . $this->getServiceNamespace() . '\\' . Str::studly($this->argument('service')) . PartConfigReader::read('common')->getName() . 'Service';
         }
     }
 
