@@ -158,7 +158,7 @@ class ModelMakeCommand extends GeneratorCommand
                 $str = "_" . $str;
             }
             return $str;
-        }, $this->getModuleName());
+        }, Str::studly($this->argument('model')));
         return $name;
     }
 
